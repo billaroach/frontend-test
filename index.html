@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <title>Form</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <!--<script type="text/javascript" src="validation.js"></script>-->
+  <script src="ajax.js"></script>
+
+ </head>
+ <body>
+    <form id="auth" action="" onsubmit="return validate()" enctype="multipart/form-data" class="my-form" method="post">
+        <h1>Задать вопрос</h1>
+        <input type="text" class="tooltip" name="name" id="fio" form="auth" title="Только русские буквы, дефис и пробел" placeholder="Фамилия Имя Отчество *" required autocomplete="off">
+        <input type="text" class="tooltip" name="phone" id="tel" form="auth" title="Только цифры и +" placeholder="Телефон *" required autocomplete="off">
+        <input type="text" class="tooltip" name="email" id="email"  form="auth" title="Укажите адрес в формате abc@xyz.com" placeholder="Email" autocomplete="off">
+        <button class="button-submit" id="btn-submit" type="submit">ОТПРАВИТЬ ЗАПРОС</button>
+    </form>
+
+    <!--<div id="result_form">вывод</div>-->
+
+ </body>
+ 
+</html>
+
+
+
